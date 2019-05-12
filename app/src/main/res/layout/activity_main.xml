@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/madden16Calculator_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:width="320dp"
+        android:gravity="center"
+        android:text="@string/madden_16_scouting_calculator_Title"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/calculate_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="37dp"
+        android:text="@string/enter_Button"
+        app:layout_constraintStart_toStartOf="@+id/fortyTime_Text"
+        app:layout_constraintTop_toBottomOf="@+id/twentyYardShuttle_UserInput" />
+
+    <TextView
+        android:id="@+id/fortyTime_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:text="@string/_40_time_Text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/fortyTime_UserInput"
+        app:layout_constraintTop_toTopOf="@+id/fortyTime_UserInput" />
+
+    <TextView
+        android:id="@+id/threeConeDrill_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:text="@string/_3_cone_time_Text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/threeConeDrill_UserInput"
+        app:layout_constraintTop_toTopOf="@+id/threeConeDrill_UserInput" />
+
+    <TextView
+        android:id="@+id/twentyYardShuttle_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:text="@string/_20_yard_shuttle_time_Text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/twentyYardShuttle_UserInput"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/threeConeDrill_UserInput" />
+
+    <EditText
+        android:id="@+id/fortyTime_UserInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:width="150dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:ignore="Autofill, LabelFor"
+        app:layout_constraintEnd_toEndOf="@+id/madden16Calculator_Text"
+        app:layout_constraintStart_toStartOf="@+id/twentyYardShuttle_UserInput"
+        app:layout_constraintTop_toBottomOf="@+id/madden16Calculator_Text" />
+
+    <EditText
+        android:id="@+id/threeConeDrill_UserInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:width="150dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:ignore="Autofill, LabelFor"
+        app:layout_constraintStart_toStartOf="@+id/fortyTime_UserInput"
+        app:layout_constraintTop_toBottomOf="@+id/fortyTime_UserInput" />
+
+    <EditText
+        android:id="@+id/twentyYardShuttle_UserInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:width="150dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:ignore="Autofill, LabelFor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/twentyYardShuttle_Text"
+        app:layout_constraintTop_toTopOf="@+id/twentyYardShuttle_Text" />
+
+    <TextView
+        android:id="@+id/speed_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:text="@string/speed_Text"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/acceleration_Text"
+        app:layout_constraintEnd_toEndOf="@+id/acceleration_Text" />
+
+    <TextView
+        android:id="@+id/acceleration_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="87dp"
+        android:text="@string/acceleration_Text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/twentyYardShuttle_Text"
+        app:layout_constraintStart_toStartOf="@+id/threeConeDrill_Text"
+        app:layout_constraintTop_toBottomOf="@+id/calculate_Button" />
+
+    <TextView
+        android:id="@+id/agility_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="@string/agility_Text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/acceleration_Text"
+        app:layout_constraintTop_toBottomOf="@+id/acceleration_Text" />
+
+    <TextView
+        android:id="@+id/speedOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/speed_Text"
+        app:layout_constraintEnd_toStartOf="@+id/accelerationOutput"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/accelerationOutput" />
+
+    <TextView
+        android:id="@+id/accelerationOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/acceleration_Text"
+        app:layout_constraintEnd_toStartOf="@+id/agilityOutput"
+        app:layout_constraintStart_toStartOf="@+id/agilityOutput" />
+
+    <TextView
+        android:id="@+id/agilityOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        app:layout_constraintBottom_toBottomOf="@+id/agility_Text"
+        app:layout_constraintStart_toEndOf="@+id/agility_Text" />
+
+</android.support.constraint.ConstraintLayout>

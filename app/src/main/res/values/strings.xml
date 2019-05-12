@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Madden2016ScoutingCalculator</string>
+    <string name="madden_16_scouting_calculator_Title">Madden 16 Scouting Calculator</string>
+    <string name="enter_Button">Enter</string>
+    <string name="_40_time_Text">40 Time:</string>
+    <string name="_3_cone_time_Text">3 Cone Time:</string>
+    <string name="_20_yard_shuttle_time_Text">20 Yard Shuttle Time:</string>
+    <string name="speed_Text">Speed:</string>
+    <string name="acceleration_Text">Acceleration:</string>
+    <string name="agility_Text">Agility:</string>
+</resources>
